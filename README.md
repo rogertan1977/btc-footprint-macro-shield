@@ -172,27 +172,27 @@ start.bat
 ## 📱 Telegram Alert Sample
 
 ```text
-🟢 【伏击圈信号：卖盘竭尽 + 冰山吸收】
+🟢 【Ambush Zone Signal: Selling Exhaustion + Iceberg Absorption】
 
-🎯 标的代号: BTCUSDT
-📍 当前现价: 75120.50
-📐 伏击区间: [75000.00 ~ 76300.00]
-⏱️ 监控窗口: 15s
-📊 窗口总成交: 142.35
-📉 净 CVD 变动: -84.20
-📌 微观价格偏移: +0.021%
-🧱 盘口防御厚度: 185.40
+🎯 Ticker: `BTCUSDT`
+📍 Current Price: `75120.50`
+📐 Ambush Range: `[75000.00 ~ 76300.00]`
+⏱️ Monitor Window: `15s`
+📊 Window Total Volume: `142.35`
+📉 Net CVD Delta: `-84.20`
+📌 Micro Price Drift: `+0.021%`
+🧱 Bid Wall Depth: `185.40`
 
-💡 微观结构判断:
-市价猛烈砸盘遭多头主力冰山限价单全部拦截，价格锁死不跌，多头防线极度坚固。
+💡 Microstructure Analysis:
+_Aggressive market dumping was completely intercepted by institutional limit iceberg bids. Price remains locked and refuses to drop, showing extreme bullish defense._
 
-🛡️ FRED 宏观护盾状态: ✅ SAFE
-• 隔夜逆回购: $284.1B
-• 10Y-3M 利差: -0.18%
-• 高收益债利差: 3.22%
-• 衰退风险提示: 宏观水温适宜，系统性违约概率偏低
+🛡️ FRED Macro Shield: ✅ *SAFE*
+• Overnight Reverse Repo: `$284.1B`
+• 10Y\-3M Spread: `-0.18%`
+• High\-Yield Spread: `3.22%`
+• Recession Risk Notice: _Macro liquidity is stable; probability of systemic default is low._
 
-⏰ 时间戳: 2026-11-08 14:15:22
+⏰ Timestamp: `2026-11-08 14:15:22`
 ```
 
 ---
