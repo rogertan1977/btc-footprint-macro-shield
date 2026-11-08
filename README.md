@@ -172,27 +172,23 @@ start.bat
 ## 📱 Telegram Alert Sample
 
 ```text
-🟢 **【AMBUSH ZONE ALERT: SELLING EXHAUSTION + ICEBERG ABSORPTION】**
-
-🎯 **Symbol**: BTCUSDT  
-📍 **Current Price**: 75,120.50  
-📐 **Ambush Zone**: [75000.00 ~ 76300.00]  
-⏱️ **Window**: 15s  
-📊 **Window Volume**: 142.35  
-📉 **Net CVD Delta**: -84.20  
-📌 **Micro Price Drift**: +0.021%  
-🧱 **Order Book Defense Depth**: 185.40  
-
-💡 **Microstructure Assessment**:  
-Aggressive market dumping was fully intercepted by major institutional iceberg limit bids. Price remains pinned without breaking lower; the bullish defense is exceptionally solid.  
-
-🛡️ **FRED Macro Shield Status**: ✅ SAFE  
-- **Overnight Reverse Repo (ON RRP)**: $284.1B  
-- **10Y-3M Yield Spread**: -0.18%  
-- **High-Yield Credit Spread**: 3.22%  
-- **Recession Risk Diagnostic**: Macro conditions stable; systemic default probability remains low  
-
-⏰ **Timestamp**: 2026-11-08 14:15:22
+🟢 【AMBUSH ZONE ALERT: SELLING EXHAUSTION + ICEBERG ABSORPTION】
+🎯 Symbol: BTCUSDT
+📍 Current Price: 75,120.50
+📐 Ambush Zone: [75000.00 ~ 76300.00]
+⏱️ Window: 15s
+📊 Window Volume: 142.35
+📉 Net CVD Delta: -84.20
+📌 Micro Price Drift: +0.021%
+🧱 Order Book Defense Depth: 185.40
+💡 Microstructure Assessment:
+Aggressive market dumping was fully intercepted by major institutional iceberg limit bids. Price remains pinned without breaking lower; the bullish defense is exceptionally solid.
+🛡️ FRED Macro Shield Status: ✅ SAFE
+Overnight Reverse Repo (ON RRP): $284.1B
+10Y-3M Yield Spread: -0.18%
+High-Yield Credit Spread: 3.22%
+Recession Risk Diagnostic: Macro conditions stable; systemic default probability remains low
+⏰ Timestamp: 2026-11-08 14:15:22
 ```
 
 ---
