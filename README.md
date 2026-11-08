@@ -17,7 +17,7 @@ Are you running this on an absolute antique? Open an issue or PR with your hardw
 
 ---
 
-| Feature | Bloated Quant Frameworks | 🎯 ZoneSniper |
+| Feature | Bloated Quant Frameworks | 🎯 Zone-Based Footprint & Macro Validation Agent |
 | :--- | :--- | :--- |
 | **GPU Required** | RTX 3060 / 4090 (VRAM Heavy) | **None (0% GPU, Pure CPU)** |
 | **Dependencies** | 500MB+ (Pandas, PyTorch, C++ Build) | **< 5MB (`aiohttp` only)** |
