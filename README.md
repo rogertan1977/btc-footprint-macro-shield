@@ -183,7 +183,8 @@ start.bat
 🧱 Order Book Defense Depth: 185.40
 
 💡 Microstructure Assessment:
-Aggressive market dumping was fully intercepted by major institutional iceberg limit bids. Price remains pinned without breaking lower; the bullish defense is exceptionally solid.
+Aggressive market dumping was fully intercepted by major institutional iceberg limit bids. 
+Price remains pinned without breaking lower; the bullish defense is exceptionally solid.
 
 🛡️ FRED Macro Shield Status: ✅ SAFE
 Overnight Reverse Repo (ON RRP): $284.1B
