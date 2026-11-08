@@ -10,6 +10,13 @@
 
 ---
 
+## 🥔 Potato PC Hall of Fame (亮机英雄榜)
+Are you running this on an absolute antique? Open an issue or PR with your hardware specs to get listed!
+- **Intel Core i7-4770 (2013) + 8GB RAM** — 0.1% CPU, < 30MB RAM (Author's Rig)
+- *Your old laptop / mini PC here...*
+
+---
+
 ## ⚡ Overview
 
 Most retail quantitative tools waste gigabytes of RAM computing lagging moving averages across historical candles.
