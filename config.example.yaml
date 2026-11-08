@@ -1,0 +1,41 @@
+# ==============================================================================
+# Zone-Based Footprint & Macro Validation Agent 生产配置文件
+# ==============================================================================
+
+# 1. 伏击目标与区间设定
+target:
+  symbol: "BTCUSDT"                  # 监控标的（Binance 现货或合约格式统一大写）
+  is_futures: true                   # 是否为合约交易（用于拉取 Open Interest）
+  lower_bound: 75000.0               # 伏击圈下轨
+  upper_bound: 76300.0               # 伏击圈上轨
+  hysteresis_pct: 0.0025             # 防抖缓冲带 0.25%（低于 74812.5 或高于 76490.75 才判定彻底脱离）
+  cooldown_seconds: 30               # 脱离后维持活跃的观察秒数
+  sleep_poll_interval_sec: 5.0       # 休眠状态下探测现价的 REST 间隔（极低功耗）
+
+# 2. 微观 CVD 与冰山吸收阈值
+micro_engine:
+  window_seconds: 15                 # 计算冰山吸收的滑动时间窗口（秒）
+  min_volume_threshold: 50.0         # 窗口内最小成交量阈值 (BTC)
+  cvd_imbalance_ratio: 2.5           # 买卖成交量失衡比例（判定卖竭尽或买竭尽）
+  price_impact_tolerance_pct: 0.0008 # 价格最大位移容忍度 0.08%（成交放量但价格锁死）
+  depth_absorption_ratio: 2.0        # 盘口防守墙挂单与市价砸盘量的最小比率
+  squeeze_oi_drop_pct: 0.005         # 判定踩踏时的 1 分钟持仓量 (OI) 下降阈值 (0.5%)
+
+# 3. 宏观护盾 (FRED API)
+macro_shield:
+  enabled: true
+  api_key: "YOUR_FRED_API_KEY_HERE"  # 从 https://fred.stlouisfed.org/ 申请的免费 API Key
+  refresh_interval_hours: 12         # 宏观数据背景轮询间隔（小时）
+  thresholds:
+    on_rrp_critical_billions: 200.0  # 逆回购低于 2000 亿视为美元流动性枯竭
+    hy_spread_critical_pct: 4.50     # 高收益债信用利差警戒线 (450 bps)
+    sahm_rule_critical: 0.50         # 萨姆规则衰退阈值 (0.5%)
+
+# 4. 通知系统 (Telegram)
+notification:
+  telegram_bot_token: "YOUR_TELEGRAM_BOT_TOKEN"
+  telegram_chat_id: "YOUR_CHAT_ID"
+
+# 5. 存储配置
+storage:
+  db_path: "data/sniper_records.db"
