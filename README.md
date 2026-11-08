@@ -62,9 +62,9 @@ Most retail quantitative tools waste gigabytes of RAM computing lagging moving a
 ### 2. Zero-Lag Microstructure Engine
 Ditches lagging OHLCV candles to read raw limit-to-market interactions:
 * **Incremental CVD Calculation**: Maintains rolling Delta accumulators with arithmetic additions/subtractions upon ingestion and eviction—zero loop recalculations.
-* **Absorption / Exhaustion Detection**:
-  $$\text{Imbalance} = \frac{V_{\text{taker\_sell}}}{V_{\text{taker\_buy}}} \ge 2.5 \quad \land \quad \frac{|\Delta P|}{P} \le 0.08\% \quad \land \quad \text{Depth}_{\text{bid\_wall}} \ge 2.0 \times V_{\text{taker\_sell}}$$
-  Instantly identifies when massive market dumping gets absorbed by iceberg limit bids.
+* **Absorption / Exhaustion Detection**: 
+  Identifies situations where market dumping is absorbed by iceberg limit bids based on this core condition:
+  `Imbalance = (Taker Sell / Taker Buy) >= 2.5` **AND** `(|ΔP| / P) <= 0.08%` **AND** `Bid Wall Depth >= 2.0 × Taker Sell`
 
 ### 3. FRED Macro Disaster Shield
 An independent, background-updated local cache tracks systemic solvency risks via the St. Louis Fed API without stalling the event loop:
